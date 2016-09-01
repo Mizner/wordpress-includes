@@ -6,6 +6,7 @@
  * @link https://developer.wordpress.org/reference/functions/remove_action/
  * @link https://developer.wordpress.org/reference/hooks/tiny_mce_plugins/
  */
+
 add_action('init', function () {
     // Remove actions related to emojis
     remove_action('admin_print_styles', 'print_emoji_styles');
@@ -16,5 +17,11 @@ add_action('init', function () {
     remove_filter('the_content_feed', 'wp_staticize_emoji');
     remove_filter('comment_text_rss', 'wp_staticize_emoji');
     // Remove TinyMCE emojis
-    add_filter('tiny_mce_plugins', 'disable_emojicons_tinymce');
+    add_filter('tiny_mce_plugins', function () {
+        if (is_array($plugins)) {
+            return array_diff($plugins, ['wpemoji']);
+        } else {
+            return [];
+        }
+    });
 });

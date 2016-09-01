@@ -10,8 +10,6 @@ namespace Backend;
  * @link https://developer.wordpress.org/reference/functions/remove_submenu_page/
  */
 add_action('admin_init', function () {
-    $current_user = wp_get_current_user();
-
     if (!current_user_can('update_core')) {
         // Dashboard
         //remove_menu_page('index.php');

@@ -8,7 +8,7 @@ function remove_user_fields()
 {
 ?>
     <style>
-    /* Personal Options */
+    /* Personal options */
     #your-profile h2:first-of-type,
     #your-profile .form-table:first-of-type,
     /* Name */
@@ -16,9 +16,9 @@ function remove_user_fields()
     #your-profile tr.user-last-name-wrap,
     #your-profile tr.user-nickname-wrap,
     #your-profile tr.user-display-name-wrap,
-    /* Contact Information */
+    /* Contact information */
     #your-profile tr.user-url-wrap,
-    /* About The User */
+    /* About the user */
     #your-profile h2:nth-of-type(4),
     #your-profile .form-table:nth-of-type(4) {
       display: none;

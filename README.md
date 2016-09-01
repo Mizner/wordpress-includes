@@ -1,8 +1,8 @@
 # WordPress Function Includes
 
-Remove, add and update WordPress CMS includes to used in functions.php
+Remove, add and update WordPress function.php includes.
 
-I use Sage9 so the includes are moved to src/backend/ and then included in functions.php
+I use Sage9 so the includes are moved to src/backend/ and src/models/ and then included in functions.php
 
 All files are PSR-2 as per Sage9 coding standards.
 

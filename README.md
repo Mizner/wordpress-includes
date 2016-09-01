@@ -4,6 +4,8 @@ Remove, add and update WordPress CMS includes to used in functions.php
 
 I use Sage9 so the includes are moved to src/backend/ and then included in functions.php
 
+All PHP files are PSR-2 as per Sage9.
+
 ```php
 $backend_includes = [
     'src/backend/add-dashboard-item.php',

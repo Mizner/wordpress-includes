@@ -7,7 +7,7 @@
 if (function_exists('acf_add_options_page')) {
     acf_add_options_page();
     /*
-    $args = [
+    $config = [
         'page_title' 	=> 'Theme General Settings',
   		  'menu_title' 	=> 'Theme Settings',
   		  'menu_slug' 	=> 'theme-general-settings',
@@ -20,6 +20,6 @@ if (function_exists('acf_add_options_page')) {
 	      'post_id' => 'options',
 	      'autoload' => false,
     ]
-    acf_add_options_page($args);
+    acf_add_options_page($config);
     */
 }

@@ -4,7 +4,7 @@ Remove, add and update WordPress CMS includes to used in functions.php
 
 I use Sage9 so the includes are moved to src/backend/ and then included in functions.php
 
-All PHP files are PSR-2 as per Sage9.
+All files are PSR-2 as per Sage9 coding standards.
 
 ```php
 $backend_includes = [
@@ -32,7 +32,14 @@ $backend_includes = [
     'src/backend/update-media-label.php'
 ];
 
-$includes = array_merge($sage_includes, $backend_includes);
+$model_includes = [
+    'src/models/acf-options.php',
+    'src/models/custom-post-type.php',
+    'src/models/custom-taxonomy.php',
+    'src/models/navigation-primary.php'
+];
+
+$includes = array_merge($sage_includes, $model_includes, $backend_includes);
 ```
 
 ## Structure
@@ -62,5 +69,10 @@ wordpress-includes/
 │   ├── update-media-label.php
 │   ├── update-page-label.php
 │   └── update-post-label.php
-├── models/
+└── models/
+    ├── acf-options.php
+    ├── custom-post-type.php
+    ├── custom-taxonomy.php
+    └── navigation-primary.php
+
 ```

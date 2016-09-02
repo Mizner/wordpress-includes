@@ -7,6 +7,7 @@ Based on Sage9, so the includes are moved to src/backend/ and src/models/ and th
 ```php
 $backend_includes = [
     'src/backend/add-dashboard-item.php',
+    'src/backend/add-dashboard-redirect.php',
     'src/backend/add-svg-upload.php',
     'src/backend/remove-dashboard-items.php',
     'src/backend/remove-default-taxonomies.php',
@@ -46,6 +47,7 @@ $includes = array_merge($sage_includes, $model_includes, $backend_includes);
 wordpress-includes/
 ├── backend/
 │   ├── add-dashboard-item.php
+│   ├── add-dashboard-redirect.php
 │   ├── add-svg-upload.php
 │   ├── remove-dashboard-items.php
 │   ├── remove-default-taxonomies.php

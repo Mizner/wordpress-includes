@@ -1,4 +1,4 @@
-<?php namespace Roots\Backend;
+<?php namespace Backend;
 
 /**
  * Remove user fields

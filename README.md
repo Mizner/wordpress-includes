@@ -14,7 +14,7 @@ $backend_includes = [
     'src/backend/remove-default-taxonomy-category.php',
     'src/backend/remove-default-taxonomy-tag.php',
     'src/backend/remove-emoji-icons.php',
-    'src/backend/remove-help-tab.php',
+    'src/backend/remove-help-tabs.php',
     'src/backend/remove-howdy.php',
     'src/backend/remove-menu-items.php',
     'src/backend/remove-singular-support.php',
@@ -54,7 +54,7 @@ wordpress-includes/
 │   ├── remove-default-taxonomy-category.php
 │   ├── remove-default-taxonomy-tag.php
 │   ├── remove-emoji-icons.php
-│   ├── remove-help-tab.php
+│   ├── remove-help-tabs.php
 │   ├── remove-howdy.php
 │   ├── remove-menu-items.php
 │   ├── remove-singular-support.php

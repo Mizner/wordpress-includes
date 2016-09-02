@@ -4,7 +4,6 @@ namespace Backend;
 /**
  * Remove menu items
  * @link https://developer.wordpress.org/reference/hooks/admin_init/
- * @link https://developer.wordpress.org/reference/functions/wp_get_current_user/
  * @link https://developer.wordpress.org/reference/functions/current_user_can/
  * @link https://developer.wordpress.org/reference/functions/remove_menu_page/
  * @link https://developer.wordpress.org/reference/functions/remove_submenu_page/

@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/reference/hooks/editable_roles/
  * @return array
  */
-add_filter('editable_roles', function () {
+add_filter('editable_roles', function ($roles) {
     if (isset($roles['author'])) {
         unset($roles['author']);
     }
@@ -18,5 +18,10 @@ add_filter('editable_roles', function () {
     if (isset($roles['contributor'])) {
         unset($roles['contributor']);
     }
+    /*
+    if (isset($roles['editor'])) {
+        unset($roles['editor']);
+    }
+    */
     return $roles;
 });
